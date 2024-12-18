@@ -42,7 +42,7 @@ pipeline {
             export AWS_ACCESS_KEY_ID=$AWS_ACCESS_USR
             export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_PSW
             
-            terraform apply -y
+            terraform apply -auto-approve
             
             unset AWS_ACCESS_KEY_ID
             unset AWS_SECRET_ACCESS_KEY
